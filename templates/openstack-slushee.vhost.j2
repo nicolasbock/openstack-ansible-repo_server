@@ -1,5 +1,6 @@
 server {
     listen {{ repo_server_port }};
+    listen [::]:{{ repo_server_port }};
     server_name {{ repo_server_name }};
 
     # Logging
